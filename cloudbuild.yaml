@@ -23,6 +23,6 @@ steps:
   - terraform
   - vet
   - terraform.json
-  - --policy-path=../../../policy-library/
+  - --policy-library=../../../policy-library/
   - --project
   - "leszek-jinx-main"
