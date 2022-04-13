@@ -18,8 +18,10 @@ steps:
 - name: google/cloud-sdk:latest
   dir: deployments/app1/dev
   args:
+  - gcloud
+  - beta
   - terraform
-  - validate
+  - vet
   - terraform.json
   - --policy-path=../../../policy-library/
   - --project
