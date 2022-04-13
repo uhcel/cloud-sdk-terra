@@ -18,6 +18,13 @@ steps:
 - name: google/cloud-sdk:latest
   dir: deployments/app1/dev
   args:
+  - sudo 
+  - apt-get 
+  - install 
+  - google-cloud-sdk-terraform-tools
+- name: google/cloud-sdk:latest
+  dir: deployments/app1/dev
+  args:
   - gcloud
   - beta
   - terraform
