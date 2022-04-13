@@ -18,6 +18,7 @@ steps:
 - name: google/cloud-sdk:latest
   dir: deployments/app1/dev
   args:
+  - terraform
   - validate
   - terraform.json
   - --policy-path=../../../policy-library/
