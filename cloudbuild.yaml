@@ -1,9 +1,9 @@
 ---
 steps:
 - name: google/cloud-sdk:latest
-  entrypoint: terraform
   dir: deployments/app1/dev
   args:
+  - terraform 
   - init
 - name: google/cloud-sdk:latest
   dir: deployments/app1/dev
