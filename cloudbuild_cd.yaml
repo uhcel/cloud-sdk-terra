@@ -1,0 +1,7 @@
+---
+steps:
+- name: gcr.io/leszek-jinx-main/terravet.img
+  dir: deployments/app1/dev
+  args:
+  - terraform 
+  - apply
