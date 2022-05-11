@@ -14,4 +14,5 @@ steps:
   dir: deployments/app1/dev
   entrypoint: terraform
   args:
-  - apply --auto-approve
+  - apply 
+  - --auto-approve
