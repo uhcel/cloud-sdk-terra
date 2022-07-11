@@ -1,4 +1,4 @@
-#Google Cloud Storage bucket
+#Google Cloud Storage buckets
 resource "google_storage_bucket" "sb-pieceofcloud-008" {
   name     = "sb-pieceofcloud-010"
   location = "europe-north1"
