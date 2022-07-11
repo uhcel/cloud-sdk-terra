@@ -1,6 +1,6 @@
 #Google Cloud Storage bucket
 resource "google_storage_bucket" "sb-pieceofcloud-008" {
-  name     = "sb-pieceofcloud-008"
+  name     = "sb-pieceofcloud-010"
   location = "europe-north1"
 }
 resource "google_container_cluster" "primary" {
