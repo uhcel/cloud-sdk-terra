@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
     bucket  = "terraform-leszek"
-    prefix  = "tf-demo/sta-dev/app1"
+    prefix  = "tf-state-files"
   }
 }
