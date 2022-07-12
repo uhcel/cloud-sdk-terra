@@ -1,18 +1,18 @@
----
 steps:
-- name: gcr.io/leszek-jinx-main/terravet.img
-  dir: deployments/app1/dev
-  args:
-  - terraform 
-  - init
-- name: gcr.io/leszek-jinx-main/terravet.img
-  dir: deployments/app1/dev
-  entrypoint: terraform
-  args:
-  - plan 
-- name: gcr.io/leszek-jinx-main/terravet.img
-  dir: deployments/app1/dev
-  entrypoint: terraform
-  args:
-  - apply 
-  - --auto-approve
+  - name: gcr.io/leszek-jinx-main/terravet.img
+    dir: deployments/app1/dev
+    args:
+      - terraform
+      - init
+  - name: gcr.io/leszek-jinx-main/terravet.img
+    dir: deployments/app1/dev
+    entrypoint: terraform
+    args:
+      - plan
+  - name: gcr.io/leszek-jinx-main/terravet.img
+    dir: deployments/app1/dev
+    entrypoint: terraform
+    args:
+      - apply
+      - '--auto-approve'
+timeout: 1200s
