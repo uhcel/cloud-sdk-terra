@@ -1,11 +1,11 @@
 #Google Cloud Storage buckets
 resource "google_storage_bucket" "sbucket-leszek-01" {
-  name     = "sbucket-leszek-01"
+  name     = "sbucket-leszek-02"
   location = "europe-north1"
 }
 #GKE cluster
 resource "google_container_cluster" "primary" {
-  name     = "my-gke-cluster-01"
+  name     = "my-gke-cluster-02"
   location = "europe-north1"
 
   # We can't create a cluster with no node pool defined, but we want to only use
